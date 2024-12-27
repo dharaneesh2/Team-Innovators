@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - My Online Review Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            color: #333;
+        }
+        .product p {
+            font-size: 16px;
+            color: #555;
+        }
+        .product .price {
+            color: #e74c3c;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        .back-btn {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function addToCart() {
+            alert("Product added to cart!");
+            // Add cart functionality here (e.g., store product in a cart array or session)
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Online Review Store</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html" style="color:white;">Home</a></li>
+            <li><a href="products.html" style="color:white;">Products</a></li>
+            <li><a href="about.html" style="color:white;">About</a></li>
+            <li><a href="contact.html" style="color:white;">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Product Details</h2>
+    
+    <div class="product-container">
+        <!-- Product 1 - Samsung S23 FE -->
+        <div class="product">
+            <img src="https://www.91-img.com/pictures/150316-v4-samsung-galaxy-s23-fe-5g-mobile-phone-large-1.jpg?tr=q-80" alt="Samsung Galaxy S23 FE">
+            <h2>SAMSUNG S23 FE</h2>
+            <p class="price">₹30,999</p>
+            <p>Key Specs:</p>
+            <ul>
+                <li>Android v13, upgradable to v14</li>
+                <li>Exynos 2200 Chipset</li>
+                <li>8 GB RAM</li>
+                <li>6.4 inches FHD+, Dynamic AMOLED 2x, 120 Hz Refresh Rate</li>
+                <li>50 MP + 12 MP + 8 MP Triple Cameras</li>
+                <li>4500 mAh Battery, Fast Charging</li>
+            </ul>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 - IQOO 13 -->
+        <div class="product">
+            <img src="https://www.91-img.com/pictures/154839-v8-iqoo-13-5g-mobile-phone-large-1.jpg?tr=q-80" alt="IQOO 13">
+            <h2>IQOO 13</h2>
+            <p class="price">₹54,999</p>
+            <p>Key Specs:</p>
+            <ul>
+                <li>Android v15</li>
+                <li>Snapdragon 8 Elite Chipset</li>
+                <li>12 GB RAM</li>
+                <li>6.82 inches QHD+, LTPO AMOLED, 144 Hz</li>
+                <li>50 MP + 50 MP + 50 MP Triple Cameras</li>
+                <li>6000 mAh Battery, Flash Charging</li>
+            </ul>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 - Xiaomi Redmi Note 14 Pro+ -->
+        <div class="product">
+            <img src="https://www.91-img.com/pictures/154781-v4-xiaomi-redmi-note-14-pro-plus-mobile-phone-large-1.jpg" alt="Xiaomi Redmi Note 14 Pro+">
+            <h2>Xiaomi Redmi Note 14 Pro+ 5G</h2>
+            <p class="price">₹30,999</p>
+            <p>Key Specs:</p>
+            <ul>
+                <li>Android v13</li>
+                <li>Snapdragon 8 Gen 1 Chipset</li>
+                <li>8 GB RAM</li>
+                <li>6.67 inches AMOLED, 120 Hz Refresh Rate</li>
+                <li>50 MP + 8 MP + 50 MP Triple Cameras</li>
+                <li>6200 mAh, 90W Fast Charging</li>
+            </ul>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+          <div class="product">
+        <h3>IQOO NEO 9 PRO </h3><div class="product">
+        <h3>Xiaomi Redmi Note 14 5G</h3>
+        <img src="https://www.91-img.com/pictures/154784-v4-xiaomi-redmi-note-14-mobile-phone-large-1.jpg?tr=q-80" alt="Xiaomi Redmi Note 14 5G Image">
+        <p>Key Specs
+            <br>Price: ₹18,999
+            <br>Display: 6.67 inches (16.94 cm) FHD+, G-OLED, 120 Hz Refresh Rate
+            <br>Camera: 50 MP + 8 MP + 2 MP Triple Primary Cameras, 20 MP Front Camera
+            <br>Battery: 5110 mAh, 45W Fast Charging
+            <br>Storage: 6 GB RAM | 128 GB Storage
+        </p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>REALME GT 7 PRO</h3>
+        <img src="https://www.91-img.com/pictures/165533-v4-realme-gt-7-pro-mobile-phone-large-5.jpg" alt="Itel S25 Ultra Image">
+<br>PRICE:59,999
+        <p>Key Specs
+<br>Performance
+Octa core (4.32 GHz, Dual Core + 3.53 GHz, Hexa Core)Snapdragon 8 Elite12 GB RAM
+<br>Display
+6.78 inches (17.22 cm)FHD+, LTPO AMOLED120 Hz Refresh Rate
+<br>Camera
+50 MP + 8 MP + 50 MP Triple Primary CamerasDual LED Flash16 MP Front Camera
+<br>Battery
+5800 mAhSuper VOOC ChargingUSB Type-C Port
+256 GB, Non ExpandableDual SIM: Nano + 
+        <img src="https://www.91-img.com/pictures/156670-v4-iqoo-neo-9-pro-mobile-phone-large-5.jpg" alt="IQOO NEO 9 PRO Image">
+<br>PRICE:35,990
+      <br>  <p>Key Specs
+
+<br>Android v14
+<br>Performance
+Octa core (3.2 GHz, Single Core + 2.8 GHz, Quad core + 2 GHz, Tri core)Snapdragon 8 Gen 28 GB RAM
+<br>Display
+6.78 inches (17.22 cm)FHD+, AMOLED144 Hz Refresh Rate
+<br>Camera
+50 MP + 8 MP Dual Primary CamerasLED Flash16 MP Front Camera
+<br>Battery
+5160 mAhFlash ChargingUSB Type-C Port
+256 GB, Non ExpandableDual SIM: Nano + NanoSupportedDual VoLTEFingerprint sensor
+            
+        </p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>IQOO Z9S PRO</h3>
+        <img src="https://www.91-img.com/pictures/163996-v1-iqoo-z9s-pro-mobile-phone-large-10.jpg" alt="IQOO Z9S PRO Image">
+<br>PRICE:26,999
+        <p>Key Specs
+<br>Performance
+Octa core (2.63 GHz, Single Core + 2.4 GHz, Tri core + 1.8 GHz, Quad core)Snapdragon 7 Gen 38 GB RAM
+<br>Display
+6.77 inches (17.2 cm)FHD+, AMOLED120 Hz Refresh Rate
+<br>Camera
+50 MP + 8 MP Dual Primary CamerasSmart Aura Light16 MP Front Camera
+<br>Battery
+5500 mAhFlash ChargingUSB Type-C Port
+<br>256 GB, Non ExpandableDual
+<br> SIM: Nano + NanoSupportedVoLTEFingerprint sensorSplashproof, IP64
+                    </p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Apple iPhone 15</h3>
+        <img src="https://www.91-img.com/pictures/148763-v4-apple-iphone-15-mobile-phone-large-4.jpg" alt="iPhone 13 Image">
+<br>PRICE:58,999
+        
+<p>Key Specs
+             
+<br>iOS v17
+<br>Performance
+Hexa Core (3.46 GHz, Dual Core + 2.02 GHz, Quad core)Apple A16 Bionic6 GB RAM
+<br>Display
+6.1 inches (15.49 cm)FHD+, Super Retina XDR60 Hz Refresh Rate
+<br>Camera
+48 MP + 12 MP Dual Primary CamerasDual-color LED Flash12 MP Front Camera
+<br>Battery
+3349 mAhFast ChargingUSB Type-C Port
+<br>Wi-Fi Calling128 GB, Non ExpandableDual SIM:
+<br> Nano + eSIMSupportedVoLTENo Fingerprint sensorWaterproof, 
+<br>IP68Wireless Charging
+    </div>
+
+    <a href="home.html" class="back-btn">Back to home</a>
+
+</main>
+
+</body>
+</html>
